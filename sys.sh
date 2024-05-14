@@ -14,3 +14,4 @@ grep '/bin/bash' /etc/passwd | cut -d ":" -f 1
 # Show open ports
 echo -e "\nOpen Ports:"
 ss -tuln | awk 'NR > 1 {print $1, $4}'
+
